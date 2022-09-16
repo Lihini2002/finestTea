@@ -1,0 +1,488 @@
+*
+{
+    box-sizing: border-box;
+    margin:0; 
+    padding:0; 
+   
+}
+
+body
+{
+    background-color: rgb(209, 208, 136);
+    color:rgb(0, 0, 0); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+    
+    
+}
+
+header{
+    height:100vh; 
+    width:100%; 
+  background:  url('images/dilmah ranges.jpg') no-repeat center; 
+  background-size: cover;
+    border-bottom:5px solid  rgb(63, 121, 36); 
+    
+    
+  
+}
+.navpanel 
+{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background-color:  rgb(63, 121, 36); 
+    padding:10px;
+    
+
+ 
+}
+
+.nav_links 
+{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+nav>ul
+{
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+   
+}
+
+
+
+nav >ul>li , nav >ul>li>a{
+    text-decoration: none;
+    color:rgb(214, 214, 214); 
+    font-weight: 400;
+    font-size: 20px;
+    padding: 4px 15px;
+   
+}
+
+.dropdown-content ul li a
+{
+   
+    text-decoration: none;
+    color:rgb(0, 0, 0); 
+    padding: 4px 1px;
+    cursor: pointer;
+    
+
+}
+
+ .dropdown-content>ul>li>a:hover
+{
+    color:#c59300;
+    transition: 0.2s;
+}
+
+
+.dropdown-content
+{
+    background: rgba(247, 246, 244, 0.5);
+    padding: 10px 5px; 
+   
+}
+
+
+nav>ul>li>a:hover ,nav>ul>li:hover , .active 
+{
+    color: #c59300;
+    transition: 0.2s;
+}
+
+.dropdown-content 
+{
+    display: none;
+    width:200px; 
+    
+}
+
+
+
+
+.dropdown-content ul li 
+{
+    list-style-type: none;
+    text-align: center;
+    padding:5px; 
+}
+
+
+
+
+.dropdown:hover .dropdown-content
+{
+    display: block; 
+}
+
+
+
+
+.logo 
+{
+    position:relative;  
+    left: 0;
+    height:15vh; 
+    width:150px; 
+    border-radius: 10px;
+}
+nav
+{
+    
+    margin-top: 0;
+    margin-right: auto;
+    background:rgb(63, 121, 36) ;
+    width:100%; 
+    height:15vh ;
+    
+}
+
+
+/*section 2 - products*/
+.product-grid , .intro-ts , .tea-cont3
+{
+    margin: 0 7% 3%;  
+    padding:40px; 
+    display: grid; 
+    gap:40px; 
+    background-color: rgb(63, 121, 36);
+    border-radius: 40px;
+    border : 2px solid rgb(194, 189, 189); 
+   
+    
+}
+
+.product-grid
+{
+    grid-template-columns: repeat(3, 1fr) ; 
+ 
+}
+
+.intro-ts
+{
+    grid-template-columns: 2fr 3fr; 
+  
+    justify-content: space-around;
+   
+}
+
+.tea-cont3
+{
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.tea-content ol 
+{
+    list-style-position: inside;
+    text-indent: 3%;
+    margin: 2%;
+    
+}
+
+.tea-content ol li 
+{
+    font-size: 0.9em;
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-content , .tea-content
+{background-color: rgb(240, 216, 173);
+    max-width:100% ; 
+    position: relative;
+
+   border-radius: 30px;
+
+}
+
+
+
+.intro-content p , .intro-content h3 , .tea-content h3 , .tea-content p 
+{
+    padding: 15px; 
+    
+}
+
+
+
+.intro-content p , .tea-content p , .tea-content ol 
+{
+    font-size: 1.2em;
+}
+
+.intro-content h3 , .tea-content h3
+{
+    font-size: 1.7em;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+.intro-image , .t3-image
+{
+    border:20px solid rgb(240, 216, 173);
+    border-radius: 30px;
+    max-width: 100%; 
+
+    position: relative;
+
+    
+}
+
+
+
+
+.pr-item
+{
+    max-width:100%; 
+    padding:10px; 
+    background-color: rgb(240, 216, 173);
+    border-radius: 30px;
+    border : 2px solid rgb(194, 189, 189);
+    position: relative;
+   
+   
+    
+}
+
+.pr-image
+{
+    
+    max-width: 100%; 
+    margin: 0 2px;
+    padding: 2%; 
+}
+
+.pr-heading 
+{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+
+}
+
+.pr-item:hover
+{
+    transform: translate(0px , -10px);
+}
+
+.pr-button
+{
+    width:100px; 
+    height:auto; 
+    font-size: 1.2em;
+    font-style: italic;
+    background-color:rgba(134, 126, 126, 0.9); 
+    margin:10px 0; 
+    border-radius:20px; 
+    padding:1px;
+    
+}
+
+.pr-button:hover
+{
+    background:rgb(61, 60, 60 , 0.7); 
+    cursor: pointer;
+}
+/*
+.section-heading 
+{
+   
+    height:500px; 
+    width:100%; 
+    
+    /*background: linear-gradient(to left, 
+    url(images/hot tea_MG_0022.jpg), 
+    rgb(63, 121, 36), 
+    rgb(79, 99, 6) , 
+        rgb(131, 160, 26) , 
+       rgb(240, 216, 173), 
+        rgb(255, 255, 195) )
+      */  
+   /*
+  
+    background: url("images\TEA4U Earl Grey Black Tea (Earl Grey Bergamot) Original Ceylon Tea, 25 Teabags.jpg") repeat center;
+    background-size: contain; 
+
+
+*/
+
+.section-heading h3
+{
+    font-size: 3.8em;
+    text-align: center ; 
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-bottom: 2rem;
+}
+
+
+
+section{
+    margin:40px 0px; 
+
+}
+
+@media only screen and (max-width: 1000px )
+{
+    .product-grid
+    {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    body
+    {
+        font-size: 14px; 
+    }
+
+    .intro-ts , .tea-cont3
+    {
+        grid-template-columns: 1fr; 
+    }
+
+    .intro-image 
+
+    {
+    
+        border:none;
+        max-width:100%; 
+        height:auto; 
+    }
+
+    .intro-content
+    {
+        grid-area: 3/1/span 1 /span 1;
+    }
+}
+
+@media only screen and (max-width: 750px )
+{
+    .product-grid
+    {
+        grid-template-columns: 1fr; 
+    }
+
+    body
+    {
+        font-size: 12px;
+    }
+
+
+
+}
+
+/*footer*/
+
+footer 
+{
+
+    background-color: rgb(63, 121, 36); 
+    max-width:100%;
+    box-sizing: border-box;
+    margin: none;
+    padding: none;  
+}
+.footer-container
+{
+    padding: 70px;  
+    position: relative;
+    
+}
+
+.footer-row h4
+{
+    color:#c59300; 
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.logo-footer
+{
+    max-width: 100%;
+    height:auto; 
+}
+
+
+.footer-row
+{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    font-size: 0.9em;
+    position: relative;
+}
+
+.footer-col
+{
+  max-width: 25%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px )
+{
+    .footer-col
+    {
+        min-width: 50%;
+    }
+
+    .logo-footer
+{
+    max-width: 25%;
+    height:auto; 
+}
+
+}
+
+
+@media only screen and (max-width: 750px )
+{
+    .footer-col
+    {
+        min-width: 100%; 
+    }
+}
+.footer-row h4
+{
+    font-size: 1.2em;
+    padding: 5px;
+    margin-bottom: 10px; 
+}
+
+.footer-row ul 
+{
+    list-style-type: none;
+}
+
+.footer-col a 
+{
+    text-decoration: none;
+    color:#bec2b9; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7;
+    
+}
+
+.footer-col a:hover
+{
+    text-decoration:underline 2px; 
+    color: rgb(186, 192, 106);
+
+}
+
+.footer-col .social-links a
+{
+    font-size: 1.6em;
+    text-align: center;
+    padding:10px;
+
+}
+

@@ -1,0 +1,411 @@
+*
+{
+    box-sizing: border-box;
+    margin:0; 
+    padding:0; 
+}
+
+body
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 18px;
+    background-color: rgb(16, 17, 16);
+    color:rgb(205, 213, 219); 
+}
+
+header{
+    height:120vh; 
+    max-width:100%; 
+  background:  url('images/zesta main.jpg') no-repeat center; 
+  background-size: cover;
+
+  
+}
+.navpanel 
+{
+    position: relative;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+ 
+    max-width: 100%;
+
+    background-color:  rgb(46, 46, 46) ; 
+    padding:10px;
+    flex-wrap: nowrap;
+ 
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around; 
+  width: 94%;
+  text-align: center;
+    
+}
+
+
+nav>ul
+{
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+   
+}
+
+
+nav >ul>li , nav >ul>li>a{
+    text-decoration: none;
+    color:rgb(214, 214, 214); 
+    font-weight: 400;
+    font-size: 20px;
+    padding: 4px 15px;
+   
+}
+
+.dropdown-content ul li a
+{
+   
+    text-decoration: none;
+    color:rgb(221, 221, 221); 
+    padding: 7px 7px;
+
+    cursor: pointer;
+    
+
+}
+
+ .dropdown-content>ul>li>a:hover
+{
+    background: rgb(156, 158, 156, 0.4);
+    transition: 0.2s;
+
+}
+
+nav>ul>li>a:hover ,nav>ul>li:hover , .active 
+{
+    color:rgb(255, 255, 255); 
+    transition: 0.2s;
+}
+
+
+
+.dropdown-content
+{
+    background: rgba(37, 37, 37, 0.7);
+    padding: 10px 5px; 
+    line-height: 1.8;
+    position: relative;
+    width:200px; 
+   
+}
+
+
+
+
+.dropdown-content 
+{
+    display: none;
+    
+}
+
+
+
+
+.dropdown-content ul li 
+{
+    list-style-type: none;
+}
+
+
+
+
+.dropdown:hover .dropdown-content
+{
+    display: block; 
+}
+
+
+
+
+.logo 
+{
+    position:relative;  
+    
+    height:15vh; 
+    width:150px; 
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+nav
+{
+    
+    position: relative; 
+    margin-top: 0;
+    margin-right: auto;
+    background:rgb(46, 46, 46) ;
+    max-width:100%; 
+    height:15vh ;
+}
+
+
+/*Welcome to zesta*/
+.intro-ts , .product-grid , .tea-cont3
+{
+    background: rgb(46, 46, 46);
+    display: grid;
+    justify-content: space-between;
+    margin: 4% 4%; 
+    padding:30px ;
+    gap:20px; 
+    position: relative;
+}
+
+.section-heading 
+{
+    display: none;
+}
+
+
+.pr-item 
+{
+    border: 2px solid rgb(131, 125, 125); 
+    padding: 10px;
+    margin:2%; 
+    background: rgb(37, 37, 37); 
+}
+
+.pr-heading 
+{
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.pr-image
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.intro-ts , .tea-cont3
+{
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-grid
+{
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.intro-content , .intro-image , .t3-image ,  .tea-content
+{
+    position: relative;
+    max-width: 100%;
+    height:auto; 
+}
+
+.t3-image
+{
+    margin: 0 auto ; 
+}
+
+div .logo-p
+{
+    max-width:250px; 
+    margin:auto; 
+    
+}
+
+@media only screen and (max-width: 1000px )
+{
+    .intro-ts , .tea-cont3 
+    {
+        grid-template-columns: 1fr ;
+    }
+
+    .product-grid
+    {
+        grid-template-columns: 1fr 1fr; 
+    }
+   
+    .navpanel
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 750px )
+{
+    .product-grid
+    {
+        grid-template-columns: 1fr; 
+    }
+}
+.intro-ts h3 , .tea-content h3 
+{
+    font-size: 2.7em;
+    
+}
+
+ .product-grid h3 
+{
+    font-size: 4.3em;
+    text-align: left;
+}
+
+section
+{
+    margin:15% 0; 
+}
+.intro-content p 
+{
+    line-height: 2.1;
+}
+
+.tea-content ol 
+{
+    list-style-position: inside;
+    padding: 1%;
+    margin: 2%;
+}
+
+
+.tea-content ol li
+{
+    margin-bottom: 8px;
+}
+
+
+
+.pr-button
+{
+    width:100%; 
+    text-transform: capitalize;
+        position: relative; 
+    height:auto; 
+    font-size: 1.2em;
+    background-color:rgba(5, 5, 5, 0.9); 
+    margin:5px 0; 
+    color: whitesmoke;
+    padding:1px;
+    
+}
+
+.pr-button:hover
+{
+    background: rgb(124, 118, 118);  
+    color: black;
+    border: none;
+    transform:scale(1.1, 1.2); 
+    
+}
+
+/*footer*/
+
+footer 
+{
+
+    background-color: rgb(46, 46, 46) ; 
+    max-width:100%;
+    box-sizing: border-box;
+    margin: none;
+    padding: none;  
+}
+.footer-container
+{
+    padding: 70px;  
+    position: relative;
+    
+}
+
+.logo-footer
+{
+    max-width: 100%;
+    height:auto; 
+}
+
+
+.footer-row
+{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    font-size: 0.9em;
+    position: relative;
+}
+
+.footer-col
+{
+  max-width: 25%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px )
+{
+    .footer-col
+    {
+        min-width: 50%;
+    }
+
+    .logo-footer
+{
+    max-width: 25%;
+    height:auto; 
+}
+
+}
+
+
+@media only screen and (max-width: 750px )
+{
+    .footer-col
+    {
+        min-width: 100%; 
+    }
+}
+.footer-row h4
+{
+    font-size: 1.2em;
+    padding: 5px;
+    margin-bottom: 10px; 
+}
+
+.footer-row ul 
+{
+    list-style-type: none;
+}
+
+.footer-col a 
+{
+    text-decoration: none;
+    color:#bec2b9; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7;
+    
+}
+
+.footer-col a:hover
+{
+    text-decoration:underline 2px; 
+    color: rgb(255, 241, 241);
+
+}
+
+.footer-col .social-links a
+{
+    font-size: 1.6em;
+    text-align: center;
+    padding:10px;
+
+}
+
