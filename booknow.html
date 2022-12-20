@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booknow.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src ="booknow.js" defer></script>
+
+   
+ 
+    <div class="contentpageplussummary">
+        <div class="customMessageBox hide" id="customMessageBox">
+            <p class="customMessageHeading"> THANK YOU</p> 
+            <p id="customMessage">You have succesfully completed your purchase of the following items</p>
+             
+            <ul class="CustomOrderList">
+                <li class="CustomOrder"> </li>
+                <li class="CustomOrder"></li>
+                <li class="CustomOrder"></li>
+                <li class="CustomOrder"></li>
+                <li class="CustomOrder"></li>
+          </ul>
+           <p id="CustomDuration"></p>
+           <p id="CustomTotal"></p>
+
+           <div class="checkforloyalty" id="checkforloyalty">
+            <button>Check for loyalty</button>
+            <p id="loyaltyresult"></p>
+        </div>
+    
+
+          
+        </div>
+ 
+    <div class="contentBox" id="contentBox">
+
+    
+    
+    <!--Date-->
+
+<div class="sectionHeading">Dates</div>
+    <label for="date">When are you coming?</label>
+    <br>
+    <input type ="date">
+
+           
+
+<!--form validation -->
+<form id="Formid"> 
+ <div class="formBox">
+    <div class="sectionHeading">Info</div>
+ <div>
+     <label for="name">Full Name</label> <br>
+     <input id="name" name="name" type="text" placeholder="Your Name"  required class="star"> 
+     <div id="errorname" class="error" > </div>
+ </div>
+ <div>
+     <label for="tel">Phone Number</label><br>
+     <input id="tel" name="tel" type="tel" placeholder="Phone Number" minlength="10" maxlength="10">
+     <div id="errortel" class="error" > </div>
+ </div>
+ <div>
+     <label for="email">Email</label><br>
+     <input id="email" name="email" type="email" placeholder="Email" required>
+     <div id="erroremail" class="error"> </div>
+ </div>
+ <div>
+     <label for="email" class="star">Confirm Email</label> <br>
+     <input id="email-confirm" name="email-confirm" type="email" size="25" placeholder="Confirm Email"required>
+     <div id="erroremailconfirm" class="error"> </div>
+ </div>
+ <div>
+     <label for="gender">Gender</label><br>
+     <select name="gender" id="gender">
+         <option value="female">Male</option>
+         <option value="male">Female</option>
+       </select>
+ </div>
+
+ 
+</div>
+<br>
+<br>
+<section>
+    <div class="sectionHeading">Duration</div>
+    <label for="duration">How long will you be staying?</label><br>
+    <select name="duration" id="duration" required>
+        <option value="none" selected disabled hidden>Select an Option</option>
+        <option value="3h">3 hours</option>
+        <option value="1/2d">Half a day</option>
+        <option value="1d">Full day</option>
+      </select>
+
+</section>
+
+</form>
+
+<br>
+<br>
+       
+        <section>
+        <!--Guests-->
+        <div class="guestBox">
+            <div class="sectionHeading">
+                <p>Tickets</p>
+         </div>
+
+         
+            <div class ="guestContent">
+                <p class="name" >SL Adult Pass</p>
+                <p class="sideText">Rs.1200</p>
+                </div>
+
+        <div class="counterButtons" id="slAdult">
+            <div class="countButton Countincrease " ><P>+</P></div>
+            <div display-btn>0 </div>
+            <div class="countButton Countdecrease"  ><p>-</p></div>
+        </div>
+
+
+
+
+
+        <div class ="guestContent">
+            <p class="name" >SL Child Pass</p>
+            <p class="sideText">Rs.700</p>
+           </div>
+   
+           <div class="counterButtons" id="slChild">
+            <div class="countButton Countincrease" ><p>+</p></div>
+               <div display-btn>0</div>
+               <div class="countButton Countdecrease"  ><p>-</p></div>
+           </div>
+
+
+
+           <div class ="guestContent">
+            <p class="name">Foreigner Adult Pass</p>
+            <p class="sideText">Rs.5500</p>
+           </div>
+   
+           <div class="counterButtons" id="foreignAdult">
+               <div class="countButton Countincrease foreignAdult" ><p>+</p></div>
+               <div display-btn>0</div>
+               <div class="countButton Countdecrease foreignAdult"  ><p>-</p></div>
+           </div>
+
+
+
+           <div class ="guestContent">
+            <p class="name">Foreigner Child Pass</p>
+            <p class="sideText">Rs.2700</p>
+           </div>
+   
+           <div class="counterButtons" id="foreignChild">
+            <div class="countButton Countincrease foreignChild" ><p>+</p></div>
+               <div display-btn>0</div>
+               <div class="countButton Countdecrease foreignChild"  ><p>-</p></div>
+           </div>
+
+           <div class ="guestContent">
+            <p class="name" >Infant (Foreigner or SL) </p>
+            <p class="sideText">Free</p>
+           </div>
+   
+           <div class="counterButtons" id="infant">
+            <div class="countButton Countincrease infant" ><p>+</p></div>
+               <div display-btn>0</div>
+               <div class="countButton Countdecrease infant"  ><p>-</p></div>
+           </div>
+        </section>
+
+        <!---Duration-->
+   
+        <br>
+        <br>
+        <br>
+        <br>
+   <!--    Full Name (required field)
+o Mobile Number (required field)
+o Email (required field)
+o Confirm Email (required field)
+o Gender (should be a drop down menu and options are ‘Male” and
+“Female”, this is an optional field).-->
+
+<!--put stars after required fields from data attributes in css--->
+</div>
+
+<div class="orderSummary1">
+    <p class="summaryHeading">Your Order</p>
+    <p class="summarysubHeading">Current Order</p>
+    <div class="currentOrderSummary">
+
+        <p class="NoItemsShow">You have no items in your cart :(</p>
+        <table>
+            <thead class="NoItems hide" >
+             <td>Item</td>
+             <td>Qty</td>
+             <td>Cost(Rs)</td>
+            </thead>
+
+            <tr class="orderDisplay">  </tr>
+
+            <tr class="orderDisplay"> </tr>
+
+            <tr class="orderDisplay">  </tr>
+
+            <tr class="orderDisplay"> </tr>
+
+            <tr class="orderDisplay">
+
+            </tr>
+            <tfoot>
+                <tr class="durationDisplay NoItems hide">
+                    <td>Duration</td>
+                    <td></td>
+                    <td id="durationTotal">0.00</td>
+                </tr>
+            
+                <tr class="totalCost NoItems hide"> 
+                <td>Total: </td>
+                <td></td>
+                <td id="currentOrderTotalCost">0.00</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+       
+        
+    </div>
+   <br>
+    <div class="orderSummarybuttons NoItems hide"  id="addtofavourite">
+        <i class="fa fa-star" aria-hidden="true"></i>
+    <p class="orderSummarybutton">Add to favourite</p>
+</div>
+
+<div class="orderSummarybuttons NoItems hide">
+    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+<p class="orderSummarybutton" id="addToOrder">Add to Order</p>
+</div>
+<br>
+
+
+  
+    <div class="overallOrderSummary">
+        <p class="summarysubHeading">Overall Order</p>
+        <p class="showOv">Add order to add items here</p>
+        <table class="noshowOv hide" >
+            
+            <thead>
+                <td>Item</td>
+                <td>Qty</td> 
+                <td>Cost</td>
+            </thead>
+
+            <tr class="overallOrderDisplay">
+                <td>SL Adult</td>
+                <td> 0</td>
+                <td> 0</td>
+            </tr>
+
+            <tr class="overallOrderDisplay">
+                <td>SL Child</td>
+                <td> 0</td>
+                <td> 0</td>
+            </tr>
+
+
+            <tr class="overallOrderDisplay">
+                <td> Foreign Adult</td>
+                <td> 0</td>
+                <td> 0</td>
+            </tr>
+
+
+            <tr class="overallOrderDisplay">
+                <td> Foreign Child</td>
+                <td>0 </td>
+                <td> 0</td>
+            </tr>
+
+
+            <tr class="overallOrderDisplay">
+                <td> Infant</td>
+                <td> 0</td>
+                <td> 0</td>
+            </tr>
+
+            <tfoot id="overallOrderSummary">
+                <tr>
+                    <td>Total Cost: </td>
+                    <td></td>
+                    <td id="OvOrderTotal">0.00</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+
+    </div>
+    <div class="orderSummarybuttons noshowOv hide">
+        <i class="fa fa-star" aria-hidden="true"></i>
+    <p class="orderSummarybutton" id="addFav"> Add favourite order</p>
+    </div>
+
+    <div class="orderSummarybuttons noshowOv hide">
+        <i class="fa fa-star" aria-hidden="true"></i>
+    <p class="orderSummarybutton" id="placeOrder">Place Order</p>
+    </div>
+
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+   
+</div>
+
+</div>
+      <!--Duration-->
+    
+</body>
+</html>
