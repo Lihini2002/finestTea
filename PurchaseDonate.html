@@ -14,6 +14,12 @@
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
         
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
             <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -25,7 +31,7 @@
             <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-
+        <script src="Donatenow.js" defer></script>
             <header class="page-5">
               
             <span class="navpanel">
@@ -76,7 +82,65 @@
             </div>
         </section>
      
+        <h1 class="sec-head">Make a Donation</h1>
+        
+        <section class="MakeDonation">
+           
+            <div class="DonationBox">
+                <div class="PickDOnation hideelements">
+                   
+                    <p>Pick your donation amount</p>
+                    <input type="radio" id="100" name="DonAmount" value="100">
+                    <label for="DonAmount">100</label> <br>
+                    <input type="radio" id="500" name="DonAmount" value="500">
+                    <label for="DonAmount">500</label> <br>
+                    <input type="radio" id="1000" name="DonAmount" value="1000">
+                    <label for="DonAmount">1000</label> <br>
+                    <input type="radio" id="2000" name="DonAmount" value="2000">
+                    <label for="DonAmount">2000</label> <br>
+                    <input type="radio" id="5000" name="DonAmount" value="5000">
+                    <label for="DonAmount">5000</label> <br>
 
+                   
+                    <button id="DonateNow">Donate</button>
+                </div>
+                <p id="DonAmountid" class="hide"></p>
+                <p id="CustomDonateMessage" class="hide"></p>
+
+                <form id="CreditForm" class="hideelements">
+                    <div class="PersonalDetails">
+                        <div>
+                            <label for="FullName">Name</label><br>
+                            <input id="FullName" name="FullName" type="text"  required>      
+                        </div>
+                        <div>
+                            <label for="Address">Address</label><br>
+                            <input id="Address" name="Address" type="text" required>      
+                        </div>
+
+                    </div>
+                <div class="CreditCardBOx">
+                   
+                <div>
+                    <label for="CardNumber">Card Number</label><br>
+                    <input id="CardNumber" name="CardNumber" type="text"  required>      
+                </div>
+                <div>
+                    <label for="ExpDate">Exp Date</label><br>
+                    <input id="ExpDate" name="ExpDate" type="date" required>      
+                </div>
+                <div>
+                    <label for="pin">CVC/CVV</label><br>
+                    <input id="pin" name="pin" type="text" required>     
+                </div>
+                <div>
+                    <label for="NameCard">Name on Card</label><br>
+                    <input id="NameCard" name="NameCard" type="text"  required>     
+                </div>
+                </div>
+            </form>
+            </div>
+        </section>
 
         
        
