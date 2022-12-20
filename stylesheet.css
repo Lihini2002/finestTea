@@ -1041,3 +1041,100 @@ footer
 
 }
 
+.MakeDonation
+{
+    width:80vw;
+    margin:auto;
+    
+}
+
+.DonationBox
+{
+    margin:1em auto;
+    background-color: rgb(236, 253, 138); 
+    padding:2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Cabin', sans-serif;
+   
+}
+
+#DonateNow
+{
+    padding:0.2em;
+    width:10em;
+    outline: none;
+    border-radius: 20px; 
+    font-size: 1.1em;
+    background: rgb(118, 122, 62);
+    color:rgb(254, 254, 254); 
+    margin:2em;
+}
+
+#DonateNow:hover
+{
+    border:4px solid black;
+    transition:0.3s;
+    background: rgb(28, 79, 28);
+}
+
+#DonAmountid
+{
+    color:grey;  
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+#CustomDonateMessage
+{
+    font-size: 1.3em;
+}
+.hide
+{
+    display: none;
+}
+.CreditCardBOx
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+.CreditCardBOx>div>input , .PersonalDetails>div>input
+{
+    width:100%;
+    padding:0.2em;
+    margin:0.3em;
+}
+
+
+
+
+.CreditCardBOx :first-child
+{
+    grid-area: 1/1/span 1/span 2 ;
+}
+
+.CreditCardBOx :nth-child(4)
+{
+    grid-area: 3/1/span 1/span 2 ;
+}
+
+
+.PickDOnation p
+{
+    font-size: 1.2em;
+}
+
+.PickDOnation
+{
+   font-size: 1.2em;
+}
+
+
+.bookNow
+{
+    margin:2em auto; 
+  display: flex;
+  justify-self: center;
+    padding:0.5em;
+}
+
